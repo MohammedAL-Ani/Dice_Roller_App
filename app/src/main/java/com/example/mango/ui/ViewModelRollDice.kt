@@ -1,30 +1,22 @@
 package com.example.mango.ui
 
-
-
-import android.widget.ImageView
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mango.NumberRollDice
-import com.example.mango.model.RollDice
-import com.example.mango.setImageDice
-
 
 class ViewModelRollDice:ViewModel() {
 
-   val rolldice = MutableLiveData<NumberRollDice>()
- //   private val rollDiceRespone = RollDice()
-//    private val _rollDiceLive = MutableLiveData<RollDice>()
-//    val rollDiceLive : LiveData<RollDice>
-//    get() = _rollDiceLive
+   private val _rolldice = MutableLiveData<NumberRollDice>(NumberRollDice.dice1)
+    val rolldice:LiveData<NumberRollDice>
+    get() = _rolldice
 
 
     fun setImageDiceRandomly(){
 
-        rolldice.postValue(NumberRollDice.values().random())
+        _rolldice.postValue(NumberRollDice.values().random())
 
     }
-
 
 
 }
