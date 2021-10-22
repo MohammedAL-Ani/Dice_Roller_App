@@ -5,18 +5,17 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.mango.NumberRollDice
 
-class ViewModelRollDice:ViewModel() {
+class ViewModelRollDice : ViewModel() {
 
-   private val _rolldice = MutableLiveData<NumberRollDice>(NumberRollDice.dice1)
-    val rolldice:LiveData<NumberRollDice>
-    get() = _rolldice
+    private val _rolldice = MutableLiveData<NumberRollDice>(NumberRollDice.dice1)
+    val rolldice: LiveData<NumberRollDice>
+        get() = _rolldice
 
 
-    fun setRollDiceRandomly(){
+    fun setRollDiceRandomly() {
 
         _rolldice.postValue(NumberRollDice.values().random())
 
     }
-
 
 }
