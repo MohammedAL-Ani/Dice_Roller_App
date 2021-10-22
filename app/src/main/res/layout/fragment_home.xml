@@ -15,12 +15,23 @@
         tools:context=".ui.HomeFragment">
 
 
+        <TextView
+            android:id="@+id/numberdice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            setupDice="@{viewModel.rolldice}"
+            android:textColor="#119911"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toTopOf="@+id/dice_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/dice_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            Mohammed="@{viewModel.rolldice}"
+            setupDice="@{viewModel.rolldice}"
             android:foregroundGravity="center_horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -33,10 +44,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:backgroundTint="#0dd"
+            android:backgroundTint="#119911"
             android:gravity="center"
             android:elevation="2dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:onClick="@{()->viewModel.setImageDiceRandomly()}"
             android:text="Roll"
             app:layout_constraintEnd_toEndOf="@+id/dice_img"

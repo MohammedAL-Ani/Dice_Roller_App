@@ -4,8 +4,8 @@ enum class NumberRollDice {
 
     dice1,
     dice2,
-    dice4,
     dice3,
+    dice4,
     dice5,
     dice6,
 

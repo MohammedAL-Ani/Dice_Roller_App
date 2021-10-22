@@ -12,17 +12,16 @@
       android:layout_height="match_parent"
       tools:context=".ui.MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/host"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:name="com.example.mango.ui.HomeFragment"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/navigation" />
+         />
 
 
   </androidx.constraintlayout.widget.ConstraintLayout>
