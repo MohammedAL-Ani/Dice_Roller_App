@@ -13,15 +13,9 @@ import com.example.mango.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
-
     lateinit var binding : FragmentHomeBinding
+
     private  val  viewModel:ViewModelRollDice by activityViewModels()
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-       
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,9 +25,7 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater)
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
-        return  binding.root
-
+        return binding.root
     }
-
 
 }

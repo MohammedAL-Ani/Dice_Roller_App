@@ -1,17 +1,15 @@
 package com.example.mango
 
-
-import android.graphics.drawable.Drawable
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.databinding.BindingAdapter
 
 
 
 @BindingAdapter(value = ["setupDice"])
 fun setupDice(view:View ,numDice:NumberRollDice?){
+
     when (numDice){
         NumberRollDice.dice1 -> {
 
@@ -50,8 +48,8 @@ fun setupDice(view:View ,numDice:NumberRollDice?){
             else
                 (view as TextView).text = "6"
         }
-
     }
+
 }
 
 

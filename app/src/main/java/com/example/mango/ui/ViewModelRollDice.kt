@@ -12,7 +12,7 @@ class ViewModelRollDice:ViewModel() {
     get() = _rolldice
 
 
-    fun setImageDiceRandomly(){
+    fun setRollDiceRandomly(){
 
         _rolldice.postValue(NumberRollDice.values().random())
 
