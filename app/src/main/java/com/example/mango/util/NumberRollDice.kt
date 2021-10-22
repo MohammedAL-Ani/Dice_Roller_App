@@ -1,4 +1,4 @@
-package com.example.mango
+package com.example.mango.util
 
 enum class NumberRollDice(numbers: Int) {
     dice1(1),

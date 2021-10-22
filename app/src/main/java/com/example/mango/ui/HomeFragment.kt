@@ -6,16 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProviders
 import com.example.mango.databinding.FragmentHomeBinding
+import com.example.mango.viewmodel.ViewModelRollDice
 
 
 class HomeFragment : Fragment() {
 
     lateinit var binding : FragmentHomeBinding
 
-    private  val  viewModel:ViewModelRollDice by activityViewModels()
+    private  val  viewModel: ViewModelRollDice by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

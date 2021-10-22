@@ -1,9 +1,9 @@
-package com.example.mango.ui
+package com.example.mango.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mango.NumberRollDice
+import com.example.mango.util.NumberRollDice
 
 class ViewModelRollDice : ViewModel() {
 

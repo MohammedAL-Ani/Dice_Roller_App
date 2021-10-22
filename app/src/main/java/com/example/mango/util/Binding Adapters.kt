@@ -4,11 +4,11 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-
+import com.example.mango.util.NumberRollDice
 
 
 @BindingAdapter(value = ["app:setupDice"])
-fun setupDice(view:View ,numDice:NumberRollDice?){
+fun setupDice(view:View ,numDice: NumberRollDice?){
     when (numDice){
         NumberRollDice.dice1 -> {
             setType(view,R.drawable.dice_1,"1")
